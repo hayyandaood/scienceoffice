@@ -1,0 +1,154 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-12-12 16:51:01.347567",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "generating_visits_section",
+  "visit_generation_data",
+  "section_break_3",
+  "naming_series",
+  "plan_name",
+  "column_break_6",
+  "scientific_office",
+  "column_break_3",
+  "company",
+  "general_info_section",
+  "message",
+  "samples_section",
+  "samples",
+  "publication_items_section",
+  "publication",
+  "schedules",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "general_info_section",
+   "fieldtype": "Section Break",
+   "label": "General info"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "PL-VISIT-.YYYY.-"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "scientific_office",
+   "fieldtype": "Link",
+   "label": "Scientific office",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "samples_section",
+   "fieldtype": "Section Break",
+   "label": "Samples"
+  },
+  {
+   "fieldname": "samples",
+   "fieldtype": "Table",
+   "label": "Samples",
+   "options": "Visit Plan Samples"
+  },
+  {
+   "fieldname": "publication_items_section",
+   "fieldtype": "Section Break",
+   "label": "Publication items"
+  },
+  {
+   "fieldname": "publication",
+   "fieldtype": "Table",
+   "label": "Publication",
+   "options": "Visit Plan Publication"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "generating_visits_section",
+   "fieldtype": "Section Break",
+   "label": "Generating Visits"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "message",
+   "fieldtype": "Table",
+   "label": "Message",
+   "options": "Med Visit Call Plan"
+  },
+  {
+   "fieldname": "visit_generation_data",
+   "fieldtype": "Table",
+   "label": "Visit Generation  Data",
+   "options": "Visit Generation Data"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "schedules",
+   "fieldtype": "Table",
+   "label": "schedules",
+   "options": "Visit schedule Detail"
+  },
+  {
+   "bold": 1,
+   "fieldname": "plan_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Plan Name"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Med Visit Plan",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-11-22 08:32:46.581236",
+ "modified_by": "Administrator",
+ "module": "Scienceoffice",
+ "name": "Med Visit Plan",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,42 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-12-28 16:12:56.261498",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "technique",
+  "evaluation",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "technique",
+   "fieldtype": "Select",
+   "label": "Technique",
+   "options": "Reciprocity\nLiking\nScarcity\nAuthority\nConsistency(Commitment)\nConsensus(Social Proof)"
+  },
+  {
+   "fieldname": "evaluation",
+   "fieldtype": "Rating",
+   "label": "Evaluation"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-05 06:48:29.916521",
+ "modified_by": "Administrator",
+ "module": "Scienceoffice",
+ "name": "Persuasion Techniques",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

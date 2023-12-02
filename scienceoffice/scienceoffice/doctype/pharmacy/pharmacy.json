@@ -1,0 +1,144 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:\u0635\u064a\u062f\u0644\u064a\u0629 {medical_facility_name}-{locality}",
+ "creation": "2022-12-12 17:21:14.584607",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "medical_facility_name",
+  "locality",
+  "column_break_2",
+  "type",
+  "section_break_6",
+  "owner",
+  "column_break_8",
+  "holiday_list",
+  "column_break_6",
+  "address",
+  "section_break_0klgx",
+  "daily_average_medicine__sales",
+  "daily__average_accessories_sales",
+  "section_break_10",
+  "pharmacy_specialty",
+  "section_break_8",
+  "location",
+  "note"
+ ],
+ "fields": [
+  {
+   "fieldname": "medical_facility_name",
+   "fieldtype": "Data",
+   "label": "Pharmacy  Name"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "private\npublic\nin hospital"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Link",
+   "label": "Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Geolocation",
+   "label": "Location"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Small Text",
+   "label": "note"
+  },
+  {
+   "fieldname": "holiday_list",
+   "fieldtype": "Link",
+   "label": "Holiday List",
+   "options": "Holiday List"
+  },
+  {
+   "fieldname": "owner",
+   "fieldtype": "Data",
+   "label": "Owner"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pharmacy_specialty",
+   "fieldtype": "Table",
+   "label": "Pharmacy Specialty ",
+   "options": "Pharmacy Specialty Table"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "daily_average_medicine__sales",
+   "fieldtype": "Float",
+   "label": "Daily Average Medicine  Sales"
+  },
+  {
+   "fieldname": "daily__average_accessories_sales",
+   "fieldtype": "Float",
+   "label": "Daily  Average Accessories Sales"
+  },
+  {
+   "fieldname": "locality",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Locality",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_0klgx",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-05 07:54:13.476805",
+ "modified_by": "Administrator",
+ "module": "Scienceoffice",
+ "name": "Pharmacy",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,42 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-12-23 16:55:03.436406",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "pharmacy_name",
+  "distance",
+  "direction"
+ ],
+ "fields": [
+  {
+   "fieldname": "pharmacy_name",
+   "fieldtype": "Link",
+   "label": "Pharmacy Name",
+   "options": "Pharmacy"
+  },
+  {
+   "fieldname": "distance",
+   "fieldtype": "Data",
+   "label": "Distance"
+  },
+  {
+   "fieldname": "direction",
+   "fieldtype": "Data",
+   "label": "Direction"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-05 07:27:21.418625",
+ "modified_by": "Administrator",
+ "module": "Scienceoffice",
+ "name": "Nearby Pharmacies",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

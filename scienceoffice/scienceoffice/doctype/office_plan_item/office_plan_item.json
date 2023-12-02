@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-12-01 15:27:04.514360",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product",
+  "product_group",
+  "column_break_5",
+  "composition",
+  "package",
+  "section_break_5",
+  "target",
+  "target_price",
+  "target_value",
+  "column_break_12",
+  "year",
+  "month",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "product",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Product",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "Item.item_group",
+   "fieldname": "product_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Product Group",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "composition",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Composition"
+  },
+  {
+   "fieldname": "package",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Package"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break",
+   "label": "Targeted Items"
+  },
+  {
+   "fieldname": "target",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Target"
+  },
+  {
+   "fieldname": "target_price",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Target Price"
+  },
+  {
+   "fieldname": "target_value",
+   "fieldtype": "Currency",
+   "label": "Target Value"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Int",
+   "label": "Year"
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Int",
+   "label": "Month"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Office Plan Item",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-05 06:48:50.891145",
+ "modified_by": "Administrator",
+ "module": "Scienceoffice",
+ "name": "Office Plan Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

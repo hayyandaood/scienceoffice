@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include scienceoffice *.css
+recursive-include scienceoffice *.csv
+recursive-include scienceoffice *.html
+recursive-include scienceoffice *.ico
+recursive-include scienceoffice *.js
+recursive-include scienceoffice *.json
+recursive-include scienceoffice *.md
+recursive-include scienceoffice *.png
+recursive-include scienceoffice *.py
+recursive-include scienceoffice *.svg
+recursive-include scienceoffice *.txt
+recursive-exclude scienceoffice *.pyc

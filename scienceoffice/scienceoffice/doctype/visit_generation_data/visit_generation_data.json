@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-12-28 15:56:39.265234",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "practitioner",
+  "facility",
+  "column_break_3",
+  "start_date",
+  "no_of_visits",
+  "column_break_7",
+  "end_date",
+  "column_break_wt6lb",
+  "visit_time",
+  "periodicity",
+  "section_break_7",
+  "team_leader",
+  "column_break_11",
+  "medical_representative"
+ ],
+ "fields": [
+  {
+   "fieldname": "practitioner",
+   "fieldtype": "Link",
+   "label": "Practitioner",
+   "options": "Medical Practitioner"
+  },
+  {
+   "fieldname": "facility",
+   "fieldtype": "Link",
+   "label": "Facility",
+   "options": "Medical Facility"
+  },
+  {
+   "fieldname": "periodicity",
+   "fieldtype": "Select",
+   "label": "Periodicity",
+   "options": "Weekly\nBiWeekly\nThreeWeeks\nMonthly\nQuarterly\nHalf Yearly\nYearly\nRandom"
+  },
+  {
+   "fieldname": "team_leader",
+   "fieldtype": "Link",
+   "label": "Team Leader",
+   "options": "Medical Rep"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "no_of_visits",
+   "fieldtype": "Int",
+   "label": "No of Visits"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "medical_representative",
+   "fieldtype": "Link",
+   "label": "Medical Representative",
+   "options": "Medical Rep"
+  },
+  {
+   "fieldname": "column_break_wt6lb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "visit_time",
+   "fieldtype": "Time",
+   "label": "Visit Time"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-26 10:49:38.720353",
+ "modified_by": "Administrator",
+ "module": "Scienceoffice",
+ "name": "Visit Generation Data",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

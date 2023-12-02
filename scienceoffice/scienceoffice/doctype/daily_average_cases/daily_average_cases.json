@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-02-27 15:38:32.195949",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "department",
+  "section",
+  "drug",
+  "count"
+ ],
+ "fields": [
+  {
+   "fieldname": "drug",
+   "fieldtype": "Link",
+   "label": "Drug",
+   "options": "Item"
+  },
+  {
+   "fieldname": "count",
+   "fieldtype": "Int",
+   "label": "Count"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Medical Facility Department"
+  },
+  {
+   "fieldname": "section",
+   "fieldtype": "Data",
+   "label": "section"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-05 07:31:44.180347",
+ "modified_by": "Administrator",
+ "module": "Scienceoffice",
+ "name": "Daily Average Cases",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

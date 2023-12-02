@@ -1,0 +1,62 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-18 16:55:44.415504",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "specialty",
+  "no_of_patients",
+  "classification_value",
+  "rate",
+  "date_classified",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "rate",
+   "fieldtype": "Rating",
+   "label": "Rate"
+  },
+  {
+   "fetch_from": "classifictaion.speciality",
+   "fieldname": "specialty",
+   "fieldtype": "Link",
+   "label": "Specialty",
+   "options": "Speciality"
+  },
+  {
+   "fieldname": "no_of_patients",
+   "fieldtype": "Data",
+   "label": "No of Patients"
+  },
+  {
+   "fetch_from": "classifictaion.classification_number",
+   "fieldname": "classification_value",
+   "fieldtype": "Data",
+   "label": "Classification Value"
+  },
+  {
+   "fieldname": "date_classified",
+   "fieldtype": "Date",
+   "label": "Date Classified"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-05 07:36:59.866515",
+ "modified_by": "Administrator",
+ "module": "Scienceoffice",
+ "name": "Medical Practitioner Classification",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

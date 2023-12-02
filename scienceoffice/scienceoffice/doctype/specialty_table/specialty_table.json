@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "SPE-Tab-.######",
+ "creation": "2022-12-01 16:41:32.954539",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "practitioner_specialty",
+  "year",
+  "certificate",
+  "college",
+  "country"
+ ],
+ "fields": [
+  {
+   "fieldname": "practitioner_specialty",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Practitioner Specialty",
+   "options": "Speciality",
+   "reqd": 1
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Data",
+   "label": "Year"
+  },
+  {
+   "fieldname": "certificate",
+   "fieldtype": "Data",
+   "label": "Certificate"
+  },
+  {
+   "fieldname": "college",
+   "fieldtype": "Data",
+   "label": "College"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-05 07:27:00.644538",
+ "modified_by": "Administrator",
+ "module": "Scienceoffice",
+ "name": "Specialty Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

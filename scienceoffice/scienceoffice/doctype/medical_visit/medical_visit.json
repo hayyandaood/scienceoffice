@@ -1,0 +1,273 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-12-11 09:35:37.219631",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "status",
+  "column_break_2",
+  "scientific_office",
+  "general_info_section",
+  "naming_series",
+  "column_break_4",
+  "company",
+  "column_break_8",
+  "message",
+  "section_break_10",
+  "date_of_visit",
+  "visit_time",
+  "visit_duration",
+  "column_break_16",
+  "team_leader",
+  "medical_representative",
+  "visitee_section",
+  "doctor",
+  "doctor_name",
+  "column_break_11",
+  "residentspeciality",
+  "column_break_13",
+  "medical_facility",
+  "medical_facility_name",
+  "samples_section",
+  "samples",
+  "publication_items_section",
+  "publication",
+  "resident_practioner",
+  "section_break_28",
+  "persuasion_techniques",
+  "visit_plan",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Draft\nCancelled\nClosed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "scientific_office",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Scientific office",
+   "options": "Branch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "general_info_section",
+   "fieldtype": "Section Break",
+   "label": "General info"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "VISIT-.YYYY.-"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "message",
+   "fieldtype": "Table",
+   "label": "Message",
+   "options": "Med Visit Call"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "date_of_visit",
+   "fieldtype": "Date",
+   "label": "date of visit"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "visit_duration",
+   "fieldtype": "Int",
+   "label": "visit duration"
+  },
+  {
+   "fieldname": "team_leader",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Team Leader",
+   "options": "Medical Rep"
+  },
+  {
+   "fieldname": "visitee_section",
+   "fieldtype": "Section Break",
+   "label": "Visitee"
+  },
+  {
+   "fieldname": "doctor",
+   "fieldtype": "Link",
+   "label": "Doctor",
+   "options": "Medical Practitioner"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "residentspeciality",
+   "fieldtype": "Select",
+   "label": "Resident/speciality",
+   "options": "Resident\nSpeciality"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "medical_facility",
+   "fieldtype": "Link",
+   "label": "Mediacl Facility",
+   "options": "Medical Facility"
+  },
+  {
+   "fetch_from": "medical_facility.medical_facility_name",
+   "fieldname": "medical_facility_name",
+   "fieldtype": "Data",
+   "label": "Medical Facility name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "samples_section",
+   "fieldtype": "Section Break",
+   "label": "Samples"
+  },
+  {
+   "fieldname": "publication_items_section",
+   "fieldtype": "Section Break",
+   "label": "Publication items"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "bold": 1,
+   "fieldname": "publication",
+   "fieldtype": "Table",
+   "label": "Publication",
+   "options": "Med Visit Publication"
+  },
+  {
+   "fieldname": "visit_plan",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Visit Plan",
+   "options": "Med Visit Plan",
+   "read_only": 1,
+   "set_only_once": 1
+  },
+  {
+   "allow_bulk_edit": 1,
+   "bold": 1,
+   "fieldname": "notes",
+   "fieldtype": "Table",
+   "label": "Notes",
+   "options": "Med Visit Notes"
+  },
+  {
+   "fieldname": "section_break_28",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "persuasion_techniques",
+   "fieldtype": "Table",
+   "label": "Persuasion Techniques",
+   "options": "Persuasion Techniques"
+  },
+  {
+   "fieldname": "medical_representative",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Medical Representative",
+   "options": "Medical Rep",
+   "search_index": 1
+  },
+  {
+   "fetch_from": "doctor.practitioner_name",
+   "fieldname": "doctor_name",
+   "fieldtype": "Data",
+   "label": "Doctor Name"
+  },
+  {
+   "fieldname": "resident_practioner",
+   "fieldtype": "Table",
+   "label": "Resident Practioner",
+   "options": "Resident Practitioner"
+  },
+  {
+   "fieldname": "visit_time",
+   "fieldtype": "Time",
+   "label": "Time Of Visit"
+  },
+  {
+   "fieldname": "samples",
+   "fieldtype": "Table",
+   "label": "Samples ",
+   "options": "Med Visit Samples One"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-08-23 17:32:13.031940",
+ "modified_by": "Administrator",
+ "module": "Scienceoffice",
+ "name": "Medical Visit",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

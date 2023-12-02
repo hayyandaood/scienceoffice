@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:department",
+ "creation": "2022-12-28 14:48:54.725178",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "department",
+  "section_break_2",
+  "no_of_beds",
+  "column_break_4",
+  "daily_cases",
+  "section_break_6",
+  "no_of_resident_practitioners",
+  "column_break_8",
+  "no_of_specialized_practitioners"
+ ],
+ "fields": [
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "unique": 1
+  },
+  {
+   "fieldname": "no_of_beds",
+   "fieldtype": "Int",
+   "label": "No of Beds"
+  },
+  {
+   "fieldname": "daily_cases",
+   "fieldtype": "Int",
+   "label": "Daily Cases"
+  },
+  {
+   "fieldname": "no_of_specialized_practitioners",
+   "fieldtype": "Int",
+   "label": "No of Specialized Practitioners"
+  },
+  {
+   "fieldname": "no_of_resident_practitioners",
+   "fieldtype": "Int",
+   "label": "No of Resident Practitioners"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-05 08:03:55.649398",
+ "modified_by": "Administrator",
+ "module": "Scienceoffice",
+ "name": "Medical Facility Department",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

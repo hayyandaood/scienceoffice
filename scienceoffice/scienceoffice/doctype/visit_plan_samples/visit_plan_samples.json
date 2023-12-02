@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-04-27 17:10:12.615790",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product",
+  "product_group",
+  "composition",
+  "package",
+  "planned_qty",
+  "delivered_qty",
+  "response",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "product",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Product",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "product.item_group",
+   "fieldname": "product_group",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Product Group",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "Item.composition",
+   "fieldname": "composition",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Composition"
+  },
+  {
+   "fetch_from": "Item.package",
+   "fieldname": "package",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Package"
+  },
+  {
+   "fieldname": "planned_qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Planned Qty"
+  },
+  {
+   "fieldname": "delivered_qty",
+   "fieldtype": "Int",
+   "label": "Delivered Qty"
+  },
+  {
+   "fieldname": "response",
+   "fieldtype": "Small Text",
+   "label": "Response"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-05 07:32:07.052777",
+ "modified_by": "Administrator",
+ "module": "Scienceoffice",
+ "name": "Visit Plan Samples",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

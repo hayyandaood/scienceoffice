@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-12-28 14:49:47.163098",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "department",
+  "section",
+  "column_break_2",
+  "specialty",
+  "section_break_4",
+  "department_head",
+  "holiday_list",
+  "column_break_7",
+  "no_of_beds",
+  "daily_cases",
+  "section_break_10",
+  "no_of_resident_practitioners",
+  "no_of_specialized_practitioners"
+ ],
+ "fields": [
+  {
+   "fieldname": "specialty",
+   "fieldtype": "Link",
+   "label": "Specialty",
+   "options": "Speciality"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Depatment",
+   "options": "Medical Facility Department"
+  },
+  {
+   "fieldname": "department_head",
+   "fieldtype": "Link",
+   "label": "Department Head",
+   "options": "Medical Practitioner"
+  },
+  {
+   "fieldname": "no_of_beds",
+   "fieldtype": "Int",
+   "label": "No Of Beds",
+   "options": "department.no_of_beds"
+  },
+  {
+   "fieldname": "daily_cases",
+   "fieldtype": "Int",
+   "label": "Daily Cases",
+   "options": "department.daily_cases"
+  },
+  {
+   "fieldname": "no_of_resident_practitioners",
+   "fieldtype": "Int",
+   "label": "No of Resident Practitioners",
+   "options": "department.no_of_resident_practitioners"
+  },
+  {
+   "fieldname": "no_of_specialized_practitioners",
+   "fieldtype": "Int",
+   "label": "No of Specialized Practitioners",
+   "options": "department.no_of_specialized_practitioners"
+  },
+  {
+   "fieldname": "holiday_list",
+   "fieldtype": "Link",
+   "label": "Holiday List",
+   "options": "Holiday List"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section",
+   "fieldtype": "Data",
+   "label": "Section"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-05 06:46:13.030968",
+ "modified_by": "Administrator",
+ "module": "Scienceoffice",
+ "name": "Medical Facility Specialties",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

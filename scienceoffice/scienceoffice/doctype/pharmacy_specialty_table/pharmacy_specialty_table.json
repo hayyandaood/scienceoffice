@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "PHA-SPEC-Tab-.######",
+ "creation": "2022-12-28 14:36:44.200679",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "practitioner_specialty",
+  "position",
+  "year",
+  "certificate",
+  "college",
+  "country"
+ ],
+ "fields": [
+  {
+   "fieldname": "practitioner_specialty",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Practitioner Specialty",
+   "options": "Speciality",
+   "reqd": 1
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Data",
+   "label": "Year"
+  },
+  {
+   "fieldname": "certificate",
+   "fieldtype": "Data",
+   "label": "Certificate"
+  },
+  {
+   "fieldname": "college",
+   "fieldtype": "Data",
+   "label": "College"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Data",
+   "label": "Position"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-05 07:28:44.913150",
+ "modified_by": "Administrator",
+ "module": "Scienceoffice",
+ "name": "Pharmacy Specialty Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

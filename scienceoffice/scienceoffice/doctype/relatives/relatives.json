@@ -1,0 +1,44 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-12-22 14:37:48.744387",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "relative_name",
+  "speciality",
+  "relation_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "relative_name",
+   "fieldtype": "Link",
+   "label": "Relative Name",
+   "options": "Medical Practitioner"
+  },
+  {
+   "fieldname": "relation_type",
+   "fieldtype": "Select",
+   "label": "Relation Type",
+   "options": "\nFather\nMother\nSon\nDaughter\nBrother\nSister\nCousin\nHusband\nWife\nother"
+  },
+  {
+   "fieldname": "speciality",
+   "fieldtype": "Link",
+   "label": "Speciality",
+   "options": "Speciality"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-05 06:49:32.348078",
+ "modified_by": "Administrator",
+ "module": "Scienceoffice",
+ "name": "Relatives",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

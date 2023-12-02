@@ -1,0 +1,113 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-12-01 15:28:38.299969",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product",
+  "product_group",
+  "column_break_5",
+  "composition",
+  "package",
+  "samples_section_section",
+  "sample",
+  "sample_price",
+  "sample_value",
+  "section_break_9",
+  "year",
+  "month",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "product",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Product",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "Item.item_group",
+   "fieldname": "product_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Product Group",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "composition",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Composition"
+  },
+  {
+   "fieldname": "package",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Package"
+  },
+  {
+   "fieldname": "samples_section_section",
+   "fieldtype": "Section Break",
+   "label": "Samples Section"
+  },
+  {
+   "fieldname": "sample",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Sample"
+  },
+  {
+   "fieldname": "sample_price",
+   "fieldtype": "Float",
+   "label": "Sample Price"
+  },
+  {
+   "fieldname": "sample_value",
+   "fieldtype": "Currency",
+   "label": "Sample value"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Int",
+   "label": "Year"
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Int",
+   "label": "Month"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Office Plan Sample",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-05 07:26:40.888778",
+ "modified_by": "Administrator",
+ "module": "Scienceoffice",
+ "name": "Office Plan Sample",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,12 @@
+
+frappe.listview_settings["Asset Check Detail"] = {
+
+
+	onload: function (listview) {
+
+        frappe.route_options = {
+            Periodic : "weekly"
+        };
+
+    },    
+};

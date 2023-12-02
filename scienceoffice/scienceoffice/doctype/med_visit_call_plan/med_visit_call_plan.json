@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-04-27 17:07:27.567616",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item",
+  "item_name",
+  "message",
+  "buying_cycle",
+  "attitude",
+  "reason"
+ ],
+ "fields": [
+  {
+   "fieldname": "message",
+   "fieldtype": "Link",
+   "label": "Message",
+   "options": "Medical Message"
+  },
+  {
+   "fieldname": "buying_cycle",
+   "fieldtype": "Select",
+   "label": "Buying Cycle",
+   "options": "Unaware\nAware\nAttention\nEvaluation\nTrial\nSale\nRepeat Sale"
+  },
+  {
+   "fieldname": "attitude",
+   "fieldtype": "Select",
+   "label": "Attitude",
+   "options": "Acceptance\nIndifference\nSkepticism\nObjection\nOther"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "item.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Data",
+   "label": "Reason"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-05 06:47:20.822048",
+ "modified_by": "Administrator",
+ "module": "Scienceoffice",
+ "name": "Med Visit Call Plan",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

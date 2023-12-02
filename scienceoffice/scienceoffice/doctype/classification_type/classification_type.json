@@ -1,0 +1,62 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "CLS.#####",
+ "creation": "2023-03-27 18:17:31.289060",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "speciality",
+  "from_number",
+  "to_number",
+  "classification_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "speciality",
+   "fieldtype": "Link",
+   "label": "Speciality",
+   "options": "Speciality"
+  },
+  {
+   "fieldname": "from_number",
+   "fieldtype": "Int",
+   "label": "From Number"
+  },
+  {
+   "fieldname": "to_number",
+   "fieldtype": "Int",
+   "label": "To Number"
+  },
+  {
+   "fieldname": "classification_number",
+   "fieldtype": "Data",
+   "label": "Classification Number"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-05 06:44:07.749191",
+ "modified_by": "Administrator",
+ "module": "Scienceoffice",
+ "name": "Classification Type",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

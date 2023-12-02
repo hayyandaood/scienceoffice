@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-12-28 14:20:06.163917",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "day",
+  "part_of_the_day",
+  "from_time",
+  "to_time",
+  "medical_facility",
+  "speciality",
+  "territory"
+ ],
+ "fields": [
+  {
+   "fieldname": "day",
+   "fieldtype": "Select",
+   "label": "Day",
+   "options": "\nSunday\nMonday\nTuesday\nWednesday\nThursday\nFriday\nSaturday"
+  },
+  {
+   "fieldname": "from_time",
+   "fieldtype": "Time",
+   "label": "From Time"
+  },
+  {
+   "fieldname": "to_time",
+   "fieldtype": "Time",
+   "label": "To Time"
+  },
+  {
+   "fieldname": "medical_facility",
+   "fieldtype": "Link",
+   "label": "Medical Facility",
+   "options": "Medical Facility"
+  },
+  {
+   "fetch_from": "medical_facility.territory",
+   "fieldname": "territory",
+   "fieldtype": "Link",
+   "label": "Territory",
+   "options": "Territory"
+  },
+  {
+   "fieldname": "speciality",
+   "fieldtype": "Link",
+   "label": "Speciality",
+   "options": "Speciality"
+  },
+  {
+   "description": "Parts of the Day:\n- Morning ->    5 AM to 12 PM (noon)\n    Early morning    5 to 8 AM\n    Late morning     11 AM to 12 PM\n- Afternoon ->    12 PM to 5 PM\n    Early afternoon   1 to 3 PM\n    Late afternoon    4 to 5 PM\n- Evening ->    5 PM to 9 PM\n    Early evening   5 to 7 PM\n- Night ->        9 PM to 4 PM",
+   "fieldname": "part_of_the_day",
+   "fieldtype": "Select",
+   "label": "Part of the Day",
+   "options": "\nAppointments\nMorning\nAfternoon\nEvening\nNight"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-05 07:48:07.806253",
+ "modified_by": "Administrator",
+ "module": "Scienceoffice",
+ "name": "Medical Practitioner Schedule",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
